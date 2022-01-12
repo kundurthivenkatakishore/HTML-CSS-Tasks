@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    background-color: #cdd6d6;
+    width: 90%;
+    height: 600px;
+    margin: 50px auto;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-rows: 80px 100px 200px 100px;
+    grid-template-columns: repeat(3,1fr )150px;
+    grid-gap: 20px;
+}
+.div1{
+    background-color:#343f3f;
+    grid-column:1/-1;
+}
+.div2{
+    background-color:#373a3a;
+    grid-row: 2/4;
+    grid-column: 1/2;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 130%;
+    border-radius: 25px;
+}
+.div3{
+    background-color: #373a3a;
+    height: 50px;
+    width: 180%;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.div4{
+    background-color: #373a3a;
+    width: 60%;
+    height: 120%;
+    margin-top: 140px;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+.div5{
+    background-color: #373a3a;
+    width: 120%;
+    height: 120%;
+    margin-top: 140px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+.div6{
+    background-color: #373a3a;
+    width: 60%;
+    height: 60%;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.div7{
+    background-color: #373a3a;
+    grid-column: 1/4;
+    width: 70%;
+    height: 120px;
+    margin-top: 0px;
+    margin-left: 400px;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 500px) {
+    .data {
+      width: 100%;
+    }
+}
